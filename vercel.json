@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/ats-frontend/$1" }
+  ],
+  "redirects": [
+    { "source": "/", "destination": "/ats-frontend/index.html" }
+  ]
+}

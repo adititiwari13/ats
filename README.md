@@ -3,6 +3,21 @@
 A full-stack, production-ready Applicant Tracking System built with **Java Spring Boot** (backend) and **React** (frontend).
 
 ![ATS](https://img.shields.io/badge/Java-17-orange) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2-green) ![React](https://img.shields.io/badge/React-18-blue) ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
+---
+
+## 🚀 Deployment
+
+This project is optimized for "Zero-Click" cloud deployment.
+
+### 🐘 Backend & Database (Render)
+1.  Connect this repository to [Render.com](https://render.com).
+2.  Render will automatically use the `render.yaml` blueprint.
+3.  It will set up your **Java Spring Boot service** and a **PostgreSQL database** automatically.
+
+### ⚛️ Frontend (Vercel)
+1.  Connect this repository to [Vercel](https://vercel.com).
+2.  Set the **Root Directory** to `ats-frontend`.
+3.  Vercel will auto-detect the Vite build and deploy your site.
 
 ---
 

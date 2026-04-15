@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: ats-backend
+    env: java
+    rootDir: ats-backend
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: ats-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: ats-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: ats-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: APP_CORS_ALLOWED_ORIGINS
+        value: https://ats-frontend.vercel.app # Change this once you have your vercel URL
+
+databases:
+  - name: ats-db
+    plan: free
+    databaseName: ats_db
+    user: ats_user
