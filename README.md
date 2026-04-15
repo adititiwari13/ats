@@ -140,6 +140,24 @@ Frontend will start at **http://localhost:5173**
 
 ---
 
+## ⚡ One-Click Start
+
+To start both the Backend and Frontend simultaneously:
+
+### Windows:
+Double-click `start.bat` or run:
+```powershell
+./start.bat
+```
+
+### Linux/Mac:
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+---
+
 ## 🧪 API Testing with Postman
 
 1. Import `ATS_Postman_Collection.json` into Postman

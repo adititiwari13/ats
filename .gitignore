@@ -19,5 +19,3 @@ Thumbs.db
 
 # Sensitivity
 backend/src/main/resources/application-prod.properties
-*.sh
-*.ps1
