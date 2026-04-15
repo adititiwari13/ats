@@ -1,0 +1,23 @@
+# Frontend
+ats-frontend/node_modules/
+ats-frontend/dist/
+ats-frontend/.env*
+
+# Backend
+ats-backend/target/
+ats-backend/.mvn/
+ats-backend/bin/
+ats-backend/uploads/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.log
+.DS_Store
+Thumbs.db
+
+# Sensitivity
+backend/src/main/resources/application-prod.properties
+*.sh
+*.ps1
